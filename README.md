@@ -5,6 +5,7 @@ The course will cover c++(17) topics from basics to advanced, python3 and how to
 ### references:
  - [Programming -- Principles and Practice using C++ (Second Edition), Bjarne Stroustrup ](https://www.stroustrup.com/programming.html)
  - [A Tour of C++, Bjarne Stroustrup](https://www.stroustrup.com/Tour.html)
+ - [Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
  - [learncpp.com](https://www.learncpp.com/)
  
 
