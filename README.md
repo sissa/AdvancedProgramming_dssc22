@@ -28,6 +28,11 @@ Martedì 04/10 – Aula 128-129
  - first intro to classes
 
 Giovedì 06/10 – Aula 128-129
+ - functions
+ - references and pointers
+ - class member functions and constructors 
+ - review of last homework
+ - survival crush course on git
 
 Martedì 11/10 – Aula 128-129
 
