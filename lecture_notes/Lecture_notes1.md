@@ -1,4 +1,4 @@
-*The notes do not consitute a full reference book, please attend lectures, watch videos or read something else to fully understand the material. They are nothing more than "notes".*
+*The notes do not constitute a full reference book, please attend lectures, watch videos or read something else to fully understand the material. They are nothing more than "notes".*
 
 ### Hello World!
 
