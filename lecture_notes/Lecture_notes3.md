@@ -54,7 +54,7 @@ or
 
 ```
 #pragma once
-void hello()
+void hello();
 ```
 
 This `pragma` command is not in the language standard and only exists if compilers implemented it. So, in bigger projects it's better to use proper header guards, however, it's totally fine for your own/small projects and homework to use the pragma command instead.
