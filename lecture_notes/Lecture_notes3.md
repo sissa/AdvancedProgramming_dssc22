@@ -311,6 +311,10 @@ for(int i=0;i<N;i++){
 
 *From now on, all your exercises shoudln't have code in the same file, but function and classes should be separated into their own .hpp and .cpp files. Yes, you will need a separate folder for each exercise and a Makefile. Don't worry, at the next lecture you'l learn why you can have a somewhat easier life with c++*
 
+#### Exercise 0:
+
+Fix the `Makefile` in the `hello_again` folder so that it actualy works.
+
 #### Exercise 1:
 (prerequisite: exercises 1,2 of Lecture 2)
 

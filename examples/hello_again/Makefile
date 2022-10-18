@@ -1,3 +1,5 @@
+#EXERCISE 0: fix mistakes so that this file actually work! hint: there is a confusion of where we store object files
+
 # This is a comment line
 CC=g++
 # This is a folder to look for header files
