@@ -34,13 +34,17 @@ Giovedì 06/10 – Aula 128-129
  - review of last homework
  - survival crush course on git
 
-Martedì 11/10 – Aula 128-129
+Martedì 11/10 – cancelled
 
-Giovedì 13/10 – Aula 128-129
+Giovedì 13/10 – cancelled
 
-Martedì 18/10 – Aula 004
+Martedì 18/10 – zoom
+ - general program structure
+ - Makefiles
+ - operator overloads
+ - working with text files
 
-Giovedì 20/10 – Aula 128-129
+Giovedì 20/10 – zoom
 
 Martedì 25/10 – Aula 128-129
 
@@ -66,7 +70,7 @@ Martedì 29/11 – Aula 128-129
 
 Giovedì 01/12 – Aula 128-129
 
-Martedì 06/12 – Aula 004
+Martedì 06/12 – AULA 139
 
 Giovedì 08/12 – Festa
 
