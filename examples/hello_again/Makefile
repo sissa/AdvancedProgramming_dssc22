@@ -15,3 +15,4 @@ src/hello.o: src/hello.c
 	$(CC) $(CFLAGS) hello.c
 clean:
 	rm -rf *.o *.x 
+	

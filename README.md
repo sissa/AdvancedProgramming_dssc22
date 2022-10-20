@@ -45,6 +45,8 @@ Martedì 18/10 – zoom
  - working with text files
 
 Giovedì 20/10 – zoom
+ - templates: functions, classes, specialization
+ - std::array and std::vector
 
 Martedì 25/10 – Aula 128-129
 
