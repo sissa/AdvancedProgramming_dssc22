@@ -1,6 +1,13 @@
 #include <iostream>
 //solution is in one file for the sake of presenting
 
+/*template <typename T>
+class CComplex;
+
+template<typename T> 
+std::ostream& operator<< (std::ostream& os, const CComplex<T>& c) ;
+*/
+
 template <typename T>
 class CComplex{
 public:
@@ -11,7 +18,8 @@ public:
     CComplex operator*(const CComplex& var);
     CComplex operator-(const CComplex& var);
     CComplex operator/(const CComplex& var);//lecturer is lazy to type this one
-    friend std::ostream& operator<<(std::ostream& os, const CComplex& c);
+    template <typename O>
+    friend std::ostream& operator<<(std::ostream& os, const CComplex<O>& c);
     
 };
 
