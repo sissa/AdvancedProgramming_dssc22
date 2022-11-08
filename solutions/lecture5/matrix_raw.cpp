@@ -21,7 +21,7 @@ class CMatrix{
     CMatrix ( CMatrix<T> && p );
     //move assignment operator
     CMatrix<T>& operator=(CMatrix<T>&& p);
-    void print_to_file(const std::string& file);
+    void print_to_file(const std::string& file) const;
     void read_from_file(const std::string& file);
     CMatrix<T> operator*(const CMatrix<T>& B);
 };//CMatrix
@@ -67,7 +67,7 @@ CMatrix<T>::CMatrix ( const CMatrix<T>& p ){
 }//copy constructor
 
 template <typename T>
-void CMatrix<T>::print_to_file(const std::string& file){
+void CMatrix<T>::print_to_file(const std::string& file) const {
   std::ofstream filevar(file);
   if(filevar){
   filevar<<size<<std::endl;
