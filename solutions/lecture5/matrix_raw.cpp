@@ -30,7 +30,15 @@ class CMatrix{
 template <typename T>
 CMatrix<T>::CMatrix(int N){
       size = N;
-      data = new T[N*N]; 
+      data=nullptr;
+      std::cout<<"called constructor with a parameter"<<std::endl;
+      if(N>0){
+       data = new T[N*N];
+      };
+     //the next line is totally useless and bad for performance
+      //but valgrind complains when printing data without it
+      //it's here just to illustrate that it shows "not real" errors sometimes
+    //  for(int i=0;i<N*N;i++){data[i]=0;}
 }//constructor
 
 //destructor
@@ -48,12 +56,9 @@ CMatrix<T>::CMatrix ( const CMatrix<T>& p ){
       std::cout<<"Copy constructor called."<<std::endl;
       //non-dynamic members    
         size = p.size;
+        data=nullptr;
       //dynamic members  
-        if (p.data == nullptr) {
-            delete[] data;
-            data=nullptr; 
-        }else{
-          delete[] data;
+        if (p.data != nullptr) {
           data = new T[size*size];
           for (int i=0;i<size*size;++i) {
             data[i] = p.data[i];
@@ -75,7 +80,7 @@ void CMatrix<T>::print_to_file(const std::string& file){
   }
   filevar.close();
   }
-  }
+  };
 };
 
 
@@ -119,7 +124,9 @@ CMatrix<T>& CMatrix<T>::operator=(const CMatrix<T>& p){
   if (this != &p) {
     size = p.size;
     if (p.data == nullptr) {
-      delete[] data;
+      if (data != nullptr){
+		delete[] data;
+     }
       data=nullptr;
     }
     else{
