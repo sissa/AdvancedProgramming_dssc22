@@ -5,7 +5,7 @@
 template <typename T> 
 struct Node{
   T val; 
-  struct Node *next;
+  Node *next;
 };
 
 template <typename T> 
@@ -19,7 +19,7 @@ class LinkedList{
     void push_back(const int& val);
     void print() const;
     ~LinkedList();
-    LinkedList& operator*()=delete;
+    LinkedList& operator=(const LinkedList<T>& LL) = delete;
 };//class
 
 //copy constructor
