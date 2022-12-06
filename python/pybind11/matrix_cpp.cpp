@@ -34,7 +34,7 @@ PYBIND11_MODULE(matrix_cpp, m) {
 		   // the object is collected by the garbage collector
 		   pybind11::capsule free_when_done(python_data, [] (void * pointer) {
 		       std::cout << "freeing memory @ " << pointer <<std::endl;
-		       delete [] reinterpret_cast<double*>(pointer);
+		       delete [] static_cast<double*>(pointer);
 		   });
 
 		   return pybind11::array_t<double>( // array_t is in pybind11/numpy.h
@@ -64,7 +64,7 @@ PYBIND11_MODULE(matrix_cpp, m) {
 		   if (info.shape[0]<=0) {
 		      throw std::runtime_error("dimension of the matrix is zero");
 		   }
-		   // to simplyfy the logic, implement only contiguous arrays. Check that the array is contiguous
+		   // to simplify the logic, implement only contiguous arrays. Check that the array is contiguous
 		   ssize_t stride=sizeof(double);
 		   for (int i=info.ndim-1;i>=0;--i){
        	              if (info.strides[i] != stride) {
@@ -76,7 +76,7 @@ PYBIND11_MODULE(matrix_cpp, m) {
 		   //all sanity checks are passed, copy the data
                    d = DCMatrix(info.shape[0]); //use assignment to not write other code...
 		   std::copy(static_cast<double*>(info.ptr),static_cast<double*>(info.ptr)+info.shape[0]*info.shape[1],d.data.begin());
-                   //now c++ is responsable of this data (managed by the smart pointer)
+                   //c++ is responsable of this data
 	        }
 	       )
 	    ;
