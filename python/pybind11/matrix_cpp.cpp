@@ -1,12 +1,10 @@
-#include "matrix_smart.hpp"
-#include "pybind11/cast.h"
-#include <cstring>
-#include <memory>
+#include "matrix_cpp.hpp"
 #include <pybind11/pybind11.h>
 #include <pybind11/numpy.h>
 #include <stdexcept>
+#include <algorithm> 
 
-PYBIND11_MODULE(matrix_smart, m) {
+PYBIND11_MODULE(matrix_cpp, m) {
     m.doc() = "This module uses the c++ code to perform simple matrix multiplications"; // optional mdule docstring
 
     m.def("test_func", &old_main, "execute old main code");
@@ -30,7 +28,7 @@ PYBIND11_MODULE(matrix_smart, m) {
 		      throw std::runtime_error("matrix is empty");
 		   }
 		   auto * python_data = new double[d.size*d.size];
-		   std::memcpy(python_data,d.data.get(),sizeof(double)*d.size*d.size);
+		   std::copy(d.data.begin(),d.data.end(),python_data);
 
 		   //little routine that is called when
 		   // the object is collected by the garbage collector
@@ -77,7 +75,7 @@ PYBIND11_MODULE(matrix_smart, m) {
 
 		   //all sanity checks are passed, copy the data
                    d = DCMatrix(info.shape[0]); //use assignment to not write other code...
-		   std::memcpy(d.data.get(),info.ptr,sizeof(double)*info.shape[0]*info.shape[1]);
+		   std::copy(static_cast<double*>(info.ptr),static_cast<double*>(info.ptr)+info.shape[0]*info.shape[1],d.data.begin());
                    //now c++ is responsable of this data (managed by the smart pointer)
 	        }
 	       )
