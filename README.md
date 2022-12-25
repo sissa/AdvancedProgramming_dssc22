@@ -28,6 +28,7 @@ Martedì 04/10 – Aula 128-129
  - first intro to classes
 
 Giovedì 06/10 – Aula 128-129
+
  - functions
  - references and pointers
  - class member functions and constructors 
@@ -39,18 +40,26 @@ Martedì 11/10 – cancelled
 Giovedì 13/10 – cancelled
 
 Martedì 18/10 – zoom
+
  - general program structure
  - Makefiles
  - operator overloads
  - working with text files
 
 Giovedì 20/10 – zoom
+
  - templates: functions, classes, specialization
  - std::array and std::vector
 
 Martedì 25/10 – Aula 128-129
 
+ - memory menagement
+ - smart pointers
+ - copy constructors and assignment operators
+
 Giovedì 27/10 – Aula 128-129
+
+ - exercise session
 
 Martedì 01/11 – Festa
 
@@ -58,13 +67,29 @@ Giovedì 03/11 – Festa
 
 Martedì 08/11 – Aula 128-129
 
+ - inheritance
+ - dynamic polymorphism
+
 Giovedì 10/11 – Aula 128-129
 
-Martedì 15/11 – Aula 128-129
+ - exercise session
+
+Martedì 15/11 – Aula 004
+  
+  - lambda functions
+  - strings/streams
+  - various topics: timing, command line parameters
 
 Giovedì 17/11 – Aula 128-129
+ 
+ - exercise session
 
 Martedì 22/11  – Aula 004
+
+ - introduction to python: 
+ - conda, jyputer
+ - variables, types, lists, control flow
+ - functions
 
 Giovedì 24/11 – Aula 005
 
