@@ -1,0 +1,10 @@
+You will have to write the answers to all the questions.
+The time limit is 4 hours, but I expect that 3 will be absolutely enough for most people.
+In addition to the questions, there will be 15-20 wrong code snippets.
+In the wrong code, you just need to find the mistake and explain why it's wrong, correct code is not required to write. 
+You can write explanations in English, Italian, French, Spanish or Russian if you want. Cursive is fine, but please make it readable.
+Questions requiring long explanations are worth more than those requiring a precise answer.
+Questions (within python and c++ sections) will come in random order to make it harder to cheat.
+You will be provided paper, but please bring your own NON red pens.
+The passing number of points has not been decided yet.
+
